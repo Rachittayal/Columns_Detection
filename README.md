@@ -18,7 +18,6 @@ The goal of this project is to identify and process pillars/columns present in a
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/your-username/Columns_Detection.git
 cd Columns_Detection  
 
@@ -40,7 +39,8 @@ This will process the input image (input/image.jpg), detect the pillars, and sav
 
 The final processed image (result.jpg) with colored pillars.
 .txt files containing the boundary points for each pillar (e.g., pillar_1.txt, pillar_2.txt, etc.).
-File Descriptions
+File Descriptions:
+
 input/image.jpg: The input image containing pillars to be detected.
 output/result.jpg: The output image with pillars highlighted in different colors.
 output/pillar_1.txt, pillar_2.txt, ...: Text files containing the coordinates of the boundaries of each detected pillar.
@@ -48,7 +48,9 @@ src/preprocess.py: Contains functions for image preprocessing (resizing, blurrin
 src/edges.py: Handles edge detection using algorithms like Canny edge detection.
 src/contours.py: Detects contours and groups the points corresponding to each pillar.
 src/visualize.py: Contains functions for visualizing the results and saving the processed image and points.
+
 Dependencies
+
 This project requires the following Python libraries:
 
 opencv-python: For image processing and visualization.
@@ -59,3 +61,13 @@ These are specified in the requirements.txt file. To install them, run:
 
 pip install -r requirements.txt
 
+Contributing
+Contributions are welcome! If you have any suggestions or improvements, feel free to fork the repository and create a pull request.
+
+How to Contribute:
+Fork the repository.
+Clone your forked repository to your local machine.
+Create a new branch for your changes (git checkout -b feature-branch).
+Make the changes and commit them (git commit -m 'Added new feature').
+Push the changes to your forked repository (git push origin feature-branch).
+Open a pull request to the main repository.
